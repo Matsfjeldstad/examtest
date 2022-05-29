@@ -1,0 +1,500 @@
+main {
+  background-color: #f1f0f0;
+  padding-bottom: 160px;
+}
+main .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.highlighted-news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+.product-cat {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: #38a47a;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #4d4c4c;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  color: #38a47a;
+  margin: 0;
+  font-size: 48px;
+}
+.big-section {
+  text-decoration: none;
+}
+.top-info {
+  padding: 16px;
+  border-bottom: 2px solid #a6a6a6;
+}
+.big-section .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+}
+
+.big-section img {
+  width: 100%;
+  max-width: 400px;
+}
+.aside-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-card .img-container {
+  padding: 24px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+.blog-card .img-container img {
+  height: 90%;
+  width: 90%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.top-stories-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.info-section {
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+}
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.card-info {
+  display: none;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  color: #4d4c4c;
+  text-decoration: none;
+  gap: 0;
+  width: 100%;
+}
+
+.bigger-post-banner {
+  width: 100%;
+  height: fit-content;
+  min-height: 400px;
+  background: linear-gradient(268.66deg, #3b7cad 28.68%, #050001 85.91%);
+  padding: 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.bigger-post-banner.bearish {
+  background: linear-gradient(268.66deg, #ad3b50 28.68%, #050001 85.91%);
+}
+
+.bigger-post-banner.bullish {
+  background: linear-gradient(268.66deg, #38a47a 28.68%, #050001 85.91%);
+}
+
+.bigger-post-banner-info {
+  color: #f1f0f0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.bigger-post-banner img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  mix-blend-mode: soft-light;
+  filter: grayscale(100%) contrast(150%);
+  opacity: 70%;
+  z-index: -1;
+}
+.bigger-post-banner-info h2 {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.bigger-post-banner-info p {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #c5c2c2;
+  font-size: 16px;
+  line-height: 1.5;
+  display: none;
+}
+.bigger-post-CTA {
+  color: #fff;
+  font-weight: 700;
+}
+.how-to-crypto-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.how-to-crypto-section .post-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* carusell-section */
+.news-carousel-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+.carousel-wrapper {
+  gap: 16px;
+  width: auto;
+  height: auto;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  position: relative;
+  box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.028), 0px 12.5px 10px rgba(0, 0, 0, 0.035),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  background-color: black;
+}
+.current-option {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-around;
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.current-option-text1 {
+  font-size: 48px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/bull.jpg);
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.anim-previous .image {
+  animation: next-image 0.65s 0.085s;
+}
+.carousel-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 32px;
+  position: relative;
+  filter: invert();
+  z-index: 3;
+}
+
+.previous-option {
+  height: 32px;
+  width: 32px;
+  background: url(/img/icons/chevron-right-solid.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  transform: rotate(180deg);
+}
+.next-option {
+  height: 32px;
+  width: 32px;
+  background: url(/img/icons/chevron-right-solid.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  border: none;
+}
+.anim-next .image,
+.anim-prev .image {
+  animation: next-image 0.65s 0.085s;
+}
+.anim-next .current-option-text1 {
+  animation: next-text 0.65s 0.085s;
+}
+
+.anim-next .current-option-text2 {
+  animation: next-text 0.65s 0.085s;
+}
+.anim-prev .current-option-text1 {
+  animation: previous-text 0.65s 0.085s;
+}
+
+.anim-prev .current-option-text2 {
+  animation: previous-text 0.65s 0.085s;
+}
+
+.HTC-read-more {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+}
+
+@media screen and (min-width: 769px) {
+  .highlighted-news-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+  }
+  h1 {
+    font-size: 64px;
+    width: 70%;
+  }
+  .top-stories-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .big-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-section .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .big-section img {
+    width: max-content;
+    height: max-content;
+  }
+  .info-section {
+    height: auto;
+  }
+  .aside-section {
+    width: 100%;
+  }
+  .top-stories-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 100%;
+  }
+  .blog-card {
+    width: 100%;
+  }
+
+  .blog-card.img-container img {
+    object-position: center;
+  }
+  .card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  .big-section .img-container {
+    height: 100%;
+  }
+  .button-container.mobile {
+    display: none;
+  }
+  .button-container.desktop {
+    display: flex;
+    width: fit-content;
+  }
+  .new-post-info {
+    width: 70%;
+  }
+  .bigger-post-banner-info {
+    width: 50%;
+  }
+  .bigger-post-banner-info h2 {
+    font-size: 36px;
+  }
+  .bigger-post-banner-info p {
+    display: flex;
+  }
+  .bigger-post-banner img {
+    height: 150%;
+    right: 10%;
+  }
+  .how-to-crypto-section .post-section {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  /* carusel section */
+  .current-option,
+  .current-option-text1 {
+    color: #fff;
+  }
+  .current-option {
+    max-width: 40%;
+  }
+  .previous-option {
+    transform: rotate(-90deg);
+  }
+  .next-option {
+    transform: rotate(90deg);
+  }
+  .carousel-wrapper {
+    flex-direction: row;
+    background-color: #1e1e1e;
+  }
+  .carousel-button {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .image {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top: auto;
+    left: auto;
+    width: 400px;
+    height: 240px;
+  }
+  .carousel-wrapper::after {
+    content: "";
+    position: relative;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    background-color: black;
+  }
+}
+@keyframes next-image {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes prev-image {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes next-text {
+  0% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(0, -90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+@keyframes previous-text {
+  0% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(0, 90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
